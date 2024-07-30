@@ -1,0 +1,72 @@
+.BMICalculator-container{
+    display:flex;
+    height: 700px;
+    align-items: center;
+    flex-direction: row;
+}
+.BMICalculator-heading{
+  padding-top: 12px;
+  color: #FFCDB2; 
+  font-size: 3rem; 
+  font-weight: bold; 
+  white-space: nowrap; 
+  transition: 0.5s;
+}
+
+.BMICalculator-heading:hover{
+  cursor: pointer;
+  color: white; 
+  transition: 0.5s;
+}
+
+.BMICalculator-subheading{
+    padding-bottom: 3px;
+    color: #ffffff; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+.BMICalculator-subheading:hover{
+  cursor: pointer;
+  color: white; 
+  transition: 0.5s;
+}
+
+.BMICalculator-calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    gap: 33px;
+    width: 450px;
+    height: 600px;
+}
+
+.BMICalculator-bmi{
+  color: white;
+  animation: bounce-in 1s ease-out both;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-2000px);
+  }
+  20% {
+    transform: scale(1.1) translateY(0);
+  }
+  40% {
+    transform: scale(0.9) translateY(-20px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03) translateY(10px);
+  }
+  80% {
+    transform: scale(0.97) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

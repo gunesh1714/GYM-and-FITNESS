@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.homepagecard-container{
+    border-radius: 10px;
+    height: 450px;
+    width: 290px;
+}
+
+.homepagecard-heading{
+    font-size:x-large;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+    padding-left: 50px ;
+    padding-top: 50px ;
+}
+
+.homepagecard-pricing{
+    font-family: "Roboto Slab", serif;
+    font-size: 2.5rem;
+    padding-top: 10px ;
+    padding-left: 50px ; 
+}
+
+.homepagecard-pricing-month{
+    font-family: "Roboto Slab", serif;
+    margin-top: -33px;
+    margin-left: 115px;
+    font-size: 1rem;
+}
+
+.homepagecard-line{
+    font-family: "Roboto Slab", serif;
+    margin-top: 20px;
+    margin-left: 55px;
+    border-radius: 10px;
+    background-color: black;
+    height: 1px;
+    width: 180px;
+}
+
+.homepagecard-features{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Roboto Slab", serif;
+}
+
+.homepagecard-details{
+    font-family: "Roboto Slab", serif;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.homepagecard-bestfor{
+    font-family: "Roboto Slab", serif;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 0.8rem;
+}
+
+.homepagecard-button{
+    margin-top: 20px;
+    margin-left: 50px;
+}

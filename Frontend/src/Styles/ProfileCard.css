@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.profileCard-display{
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  height: 400px;
+  width: 800px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.profileCard-left{
+  color: aliceblue;
+  font-size: 1.2rem;
+  padding-top: 80px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  animation: slideIn 1.3s ease-out;
+}
+
+.profileCard-left-userIcon{
+  height: 100px;
+  width: 100px;
+}
+
+.profileCard-line{
+  margin-top: 30px;
+  height: 300px;
+  border-radius: 1px;
+  border: solid 1px rgb(255, 255, 255);
+}
+
+.profileCard-right{
+  display: flex;
+  color: azure;
+  margin-left: 140px;
+  justify-content: center;
+  flex-direction: column;
+  animation: slideIn 1.8s ease-out;
+  
+}
+
+.profileCard-right-p{
+  margin-top: 13px;
+  font-size: 1.4rem;
+}
+
+.profileCard-right-h3{
+  color: rgb(224, 196, 160);
+  font-size: 1.8rem;
+}

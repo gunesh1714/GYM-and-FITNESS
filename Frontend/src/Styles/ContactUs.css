@@ -1,0 +1,96 @@
+.contactUs-heading{
+    position: absolute;
+    color: aliceblue;
+    display: flex;
+    padding-left: 7%;
+    width: 1000px;
+    font-size: 5rem;
+    font-weight: 700;
+    font-style: italic;
+    transition: 0.6s;
+}
+
+.contactUs-container{
+    margin-top: -50px;
+}
+
+.contactUs-heading:hover{
+    transition: 0.6s;
+    cursor: pointer;
+    color: transparent; 
+    -webkit-text-stroke: 1.5px white; 
+}
+
+.contactUs-contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+    margin-left: 7%;
+}
+
+.contactUs-contact-element1{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    height: 500px;
+    width: 600px;
+    box-shadow: 0 2px 10px #e6b5a9;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 1s;
+}
+
+.contactUs-contact-element1:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contactUs-contact-element1-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 27%;
+    gap: 50px;
+}
+
+.contactUs-contact1{
+    border-radius: 50px;
+    height: 500px;
+}
+
+.contactUs-contact-element2{
+    margin-right: -190px;
+    height: 500px;
+    width: 900px;
+}
+  
+  .brutalist-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 5px 5px 0 #000, 10px 10px 0 #FFB4A2;
+  }
+
+.contactUs-moving-text1{
+    width: 100%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    white-space: nowrap;
+    display: inline-block;
+    transform: skewX(-15deg); 
+}

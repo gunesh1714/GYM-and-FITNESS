@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body of the code */
+.Login-container{
+    background-color: #E0C1B3;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    height: 820px;
+    font-style: normal;
+    overflow: hidden;
+}
+
+
+/* Login and Logo */
+.Login-header{
+    font-size: 20px;
+    display: flex;
+    margin-top: 7%;
+    margin-left: 7%;
+    align-items: center;
+    animation: appear 1s ease-out forwards, fadeOut 2s ease-in forwards 1s; 
+}
+
+/* Welcome to the training */
+.Login-first {
+    margin-top: 12%;
+    margin-right: 6%;
+    display: flex;
+    font-size:70px;
+    color:cadetblue;
+    opacity: 1;
+    height: 1000px;
+    animation: appear 1s ease-out forwards, fadeOut 2s ease-in forwards 1s; 
+}
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .Login-first {
+      font-size: 95px;
+    }
+  }
+
+/* Logo CSS */
+  .Login-Logo{
+    height: 30px;
+    width: 30px;
+
+  }
+  
+.Login-Name{
+
+ --glow-color: #AEB4A9;
+ text-shadow: 0 0 .5em var(--glow-color);
+
+  background-color: #846267;
+  flex: 1 1 200px;
+  padding-top: 40px;
+  padding-left: 65px;
+  height: 850px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #AEB4A9; /* Text outline color and width */
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}  
+
+.Login-Name-Animation {
+  animation: text-fade 1.5s ease-in-out infinite;
+}
+
+@keyframes text-fade {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Login-poster {
+  flex: 1 1 700px;
+  position: relative;
+  background-color: #E0C1B3;
+  animation: slide-in-left 1.2s ease-out forwards;
+}
+
+.poster-placement {
+  margin-top: -60px;
+  margin-left: 6px;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-20deg);
+  transition: 0.5s;
+}
+
+.poster-placement:hover {
+  margin-top: -40px;
+  margin-left: 15px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateX(9deg) rotateY(-0deg);
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.Login-form{
+  background-color: #E0C1B3;
+  flex: 1 1 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 200px;
+  gap: 24px;
+  animation: login-form-transition 1s ease-out forwards;
+}  
+
+@keyframes login-form-transition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.Login-bottom{
+  display: flex;
+  font-weight: bold;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  background-color: #AEB4A9;
+  color: black;
+  font-weight: semi-bold;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.Login-bottom:hover {
+  cursor: pointer;
+  transform: perspective(1000px) rotateX(5deg) rotateY(1deg) translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #ffffff;
+}
+
+.Login-bottom:active {
+  transform: perspective(1000px) rotateX(5deg) rotateY(1deg) translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #ffffff;
+}
+
+.moving-text{
+  font-size: 2rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #5f655a; /* Text outline color and width */
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: -200px;
+  padding-bottom: 80px;
+}
+
+.Register-components {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

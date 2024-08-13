@@ -3,7 +3,7 @@ import '../Styles/ProfileCard.css';
 
 import user from '../Assets/user.png';
 
-const ProfileCard = ({name,email,age,gender,plan}) => {
+const ProfileCard = ({name,email,age,gender,bmi,plan}) => {
   return (
     <div>
       <div className='profileCard-display'>
@@ -21,6 +21,7 @@ const ProfileCard = ({name,email,age,gender,plan}) => {
             <p className='profileCard-right-p'>Email :  {email || "null"}</p>  
             <p className='profileCard-right-p'>Age :  {age || "null"}</p>
             <p className='profileCard-right-p'>Gender : {gender || "null"}</p>
+            <p className='profileCard-right-p'>BMI : {bmi || "null"}</p>
             <p className='profileCard-right-p'>Plan : {plan || "null"}</p>
         </div>  
       </div>

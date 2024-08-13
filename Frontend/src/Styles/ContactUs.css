@@ -1,6 +1,6 @@
 .contactUs-heading{
     position: absolute;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     display: flex;
     padding-left: 7%;
     width: 1000px;
@@ -11,7 +11,8 @@
 }
 
 .contactUs-container{
-    margin-top: -50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .contactUs-heading:hover{

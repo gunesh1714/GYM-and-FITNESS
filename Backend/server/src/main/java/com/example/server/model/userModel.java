@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class userModel {
@@ -15,8 +17,20 @@ public class userModel {
     private String password;
     private String userName;
     private Integer age;
+    private Integer bmi;
     private String gender;
-    private String plan;
+
+    @OneToOne
+    @JoinColumn(name = "plan_id")
+    private planModel plan;
+
+    public planModel getPlan() {
+        return plan;
+    }
+
+    public void setPlan(planModel plan) {
+        this.plan = plan;
+    }
 
     public Long getUserId() {
         return userId;
@@ -32,6 +46,14 @@ public class userModel {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getBmi() {
+        return bmi;
+    }
+
+    public void setBmi(Integer bmi) {
+        this.bmi = bmi;
     }
 
     public String getPassword() {
@@ -64,14 +86,6 @@ public class userModel {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getPlan() {
-        return plan;
-    }
-
-    public void setPlan(String plan) {
-        this.plan = plan;
     }
 
 }

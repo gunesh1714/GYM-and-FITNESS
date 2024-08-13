@@ -1,0 +1,20 @@
+.neon-bar {
+  box-shadow: 0 0 5px #fff,
+              0 0 10px currentColor,
+              0 0 15px currentColor,
+              0 0 20px currentColor;
+}
+
+.food-intake-counter{
+  background-color: #c9898c;
+}
+
+.btn-update-changes {
+  @apply bg-green-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out;
+}
+.btn-update-changes:hover {
+  @apply bg-green-600 shadow-2xl scale-105;
+}
+.btn-update-changes:active {
+  @apply scale-95;
+}

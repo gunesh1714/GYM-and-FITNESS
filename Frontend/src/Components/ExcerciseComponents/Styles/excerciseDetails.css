@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.exerciseDetail-container{
+        width: 100%;
+        height: 100%;
+        background-color: #313131;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+        background-size: 30px 30px;
+        background-position: -5px -5px;
+}
+
+.exerciseDetail-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: rgb(252, 252, 252);
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size:large;
+}
+
+.exerciseDetail-logo-text{
+    margin-top: 0.8%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.exerciseDetail-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.exerciseDetail-top{
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.exerciseDetail-quote{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: transparent; 
+  -webkit-text-stroke: 0.1px white; 
+  font-size: 4rem; 
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.exerciseDetail-quote-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exerciseDetail-quote-color{
+    color: #dda395;
+    -webkit-text-stroke: 0px white; 
+    font-weight:normal;
+}
+.exerciseDetail-quote-below{
+    padding-top: 20px;
+    color: #dda395;
+    font-size:2em;
+    font-weight:normal;
+}
+
+.exerciseDetail-quote-below-bar{
+    background-color: rgb(255, 255, 255);
+    height: 8px;
+    width: 450px;
+    border-radius:10px;
+}
+
+.exerciseDetail-exercise-container{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FFCDB2;
+}
+
+.exerciseDetail-exercise-gif{
+    height: 350px;
+    width: 350px;
+}
+
+.exerciseDetail-exercise-content{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.exerciseDetail-exercise-content strong{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(69, 7, 113);
+    font-size: 1.2em;
+}
+
+.exerciseDetail-exercise-content ol{
+    padding-left: 30px;
+}
+
+.exerciseDetail-similar-heading{
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: transparent; 
+  -webkit-text-stroke: 0.1px white; 
+  font-size: 4rem; 
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.excercises-excerciseHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 70px;
+    padding-right: 70px;
+    gap: 20px;
+  }
+
+  .excercises-excerciseCard-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease-in-out;
+}
+
+.excercises-excerciseCard-holder:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+} 
+
+.exerciseDetail-timer-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    justify-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.exerciseDetail-footer{
+    margin-top: 30px;
+}

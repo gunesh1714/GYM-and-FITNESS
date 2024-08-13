@@ -1,0 +1,45 @@
+.excercises-excerciseHolder-heading{
+    font-size: 5.5rem; 
+    font-weight: bold; 
+    color: white;
+    padding-left: 40px;
+    font-style: italic;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.excercises-excerciseHolder-heading:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    color: transparent; 
+    -webkit-text-stroke: 1.5px white; 
+    white-space: nowrap;
+}
+
+.excercises-excerciseHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 70px;
+    padding-right: 70px;
+    gap: 20px;
+  }
+  
+  .excercises-excerciseCard-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease-in-out;
+}
+
+.excercises-excerciseCard-holder:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+  

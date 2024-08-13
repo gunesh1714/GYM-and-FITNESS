@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.excercisecard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6b5a9;
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .excercisecard-heading {
+    font-size: 1.4em;
+  }
+  
+  .excercisecard-gif {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .excercisecard-content{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+  }

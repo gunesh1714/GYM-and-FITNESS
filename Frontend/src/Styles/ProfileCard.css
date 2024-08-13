@@ -3,11 +3,9 @@
 .profileCard-display{
   display: flex;
   font-family: "Roboto Slab", serif;
-  border-radius: 50px;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #6D6875;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(103, 103, 103, 0.3);
   padding: 20px;
   height: 400px;
   width: 800px;
@@ -26,7 +24,7 @@
 
 
 .profileCard-left{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   padding-top: 80px;
   width: 300px;
@@ -51,7 +49,7 @@
 
 .profileCard-right{
   display: flex;
-  color: azure;
+  color: rgb(255, 255, 255);
   margin-left: 140px;
   justify-content: center;
   flex-direction: column;
@@ -65,6 +63,6 @@
 }
 
 .profileCard-right-h3{
-  color: rgb(224, 196, 160);
+  color: #E0C1B3;
   font-size: 1.8rem;
 }

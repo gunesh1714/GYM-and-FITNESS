@@ -1,0 +1,25 @@
+.exerciseVideos-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #c9b7b5;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.exerciseVideos-title{
+    padding-top: 10px;
+    font-size: medium;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(69, 7, 113);
+}
+
+.exerciseVideos-channel{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(29, 31, 29)
+}
